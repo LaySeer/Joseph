@@ -92,11 +92,13 @@ section{
     padding: 5rem 9% 5rem;
 }
 .home{
+position:relative;
     display:flex;
     justify-content: center;
     align-items: center;
     gap: 8rem;
     background-color: black;
+    flex-wrap: wrap;
 }
 .home .home-content h1{
     font-size: 6rem;
@@ -110,12 +112,21 @@ span{
     font-size: 4rem;
     margin-bottom: 1rem;
     font-weight: 700;
+    position:relative;
+    z-index: 2;
 }
 .home-content p{
     font-size: 1.6rem;
 }
+    .home-content h1,
+.home-content h3,
+.home-content p {
+    position: relative;
+    z-index: 2; }
 .home-img{
     border-radius: relative;
+    position: relative;
+    z-index: 1;
 }
 .home-img img{
     position: relative;
@@ -196,6 +207,7 @@ box-shadow: 0 0 25px #b74b4b ;
         border-left: 3px solid #b74b4b;
     }
         */
+        
 }
 @keyframes words
 {
